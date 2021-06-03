@@ -1,0 +1,44 @@
+﻿<Page
+    x:Class="covid_19_risk_calculator.result"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:covid_19_risk_calculator"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="LightGray">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="1000"/>
+            <RowDefinition Height="0*"/>
+        </Grid.RowDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="80,27,0,0" Text="Result" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="Black" FontWeight="Bold" Height="61" Width="332"/>
+        <Rectangle HorizontalAlignment="Left" Height="9" Margin="80,94,0,0" Fill="Black" VerticalAlignment="Top" Width="320"/>
+        <Grid x:Name="back_button" Tapped="back_button_Tapped" Margin="0,164,0,-118" Grid.RowSpan="2">
+            <Rectangle HorizontalAlignment="Left" Height="85" Margin="639,649,0,0"  VerticalAlignment="Top" Width="210" Fill="#FF990000" Tapped="back_button_Tapped"/>
+            <TextBlock HorizontalAlignment="Left" Margin="708,665,0,0" Text="Back" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36"/>
+        </Grid>
+        <Rectangle HorizontalAlignment="Left" Height="289" Margin="81,503,0,0" Fill="Black" VerticalAlignment="Top" Width="511"/>
+        <Rectangle HorizontalAlignment="Left" Height="74" Margin="81,429,0,0" Fill="DarkRed"  VerticalAlignment="Top" Width="511"/>
+        <TextBlock HorizontalAlignment="Left" Margin="102,443,0,0" Text="What is COVID-19?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="White" Height="91" Width="484"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,123,0,0" Text="You have                   risk of getting COVID-19" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="Black" FontWeight="Normal" Height="76" Width="965"/>
+        <Rectangle HorizontalAlignment="Left" Height="65" Margin="283,126,0,0" VerticalAlignment="Top" Width="228" Fill="White"/>
+        <TextBlock x:Name ="risk_label" HorizontalAlignment="Left" Margin="304,123,0,0" Text="NULL" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="Black"/>
+        <TextBlock x:Name ="testing_status" HorizontalAlignment="Left" Margin="80,201,0,0" Text="NULL" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="28" Foreground="Black" FontWeight="Normal" Height="125" Width="1383"/>
+        <TextBlock HorizontalAlignment="Left" Margin="80,329,0,0" Text="About COVID-19" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="48" Foreground="Black" FontWeight="Bold" Height="61" Width="383"/>
+        <Rectangle HorizontalAlignment="Left" Height="9" Margin="80,396,0,0" Fill="Black" VerticalAlignment="Top" Width="440"/>
+        <TextBlock HorizontalAlignment="Left" Margin="100,517,0,0" Text="COVID-19 is a dangerous disease caused by a virus discovered in December 2019 in Wuhan, China. " TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="93" Width="484" />
+        <TextBlock HorizontalAlignment="Left" Margin="100,609,0,0" Text="COVID-19 most often causes respiratory symptoms that can feel much like a cold, a flu, or pneumonia, but COVID-19 can also harm other parts of the body." TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="150" Width="484" />
+        <HyperlinkButton Content="Learn more" Margin="451,727,0,0" VerticalAlignment="Top" FontSize="24" NavigateUri="https://www.cdc.gov/coronavirus/2019-ncov/your-health/about-covid-19/basics-covid-19.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2F2019-ncov%2Fcdcresponse%2Fabout-COVID-19.html"/>
+        <Rectangle HorizontalAlignment="Left" Height="289" Margin="635,503,0,0" Fill="Black" VerticalAlignment="Top" Width="511"/>
+        <Rectangle HorizontalAlignment="Left" Height="74" Margin="635,429,0,0" Fill="DarkRed"  VerticalAlignment="Top" Width="511"/>
+        <TextBlock HorizontalAlignment="Left" Margin="656,443,0,0" Text="Symptoms of COVID-19?" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" Foreground="White" Height="91" Width="484"/>
+        <TextBlock HorizontalAlignment="Left" Margin="654,517,0,0" Text="* Fever or chills" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="35" Width="153" />
+        <HyperlinkButton Content="Learn more" Margin="1006,727,0,0" VerticalAlignment="Top" FontSize="24" NavigateUri="https://www.cdc.gov/coronavirus/2019-ncov/symptoms-testing/symptoms.html"/>
+        <TextBlock HorizontalAlignment="Left" Margin="654,555,0,0" Text="* Cough" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="35" Width="97" />
+        <TextBlock HorizontalAlignment="Left" Margin="654,591,0,0" Text="* Shortness of breath" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="35" Width="245" />
+        <TextBlock HorizontalAlignment="Left" Margin="654,629,0,0" Text="* Fatigue" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="35" Width="97" />
+        <TextBlock HorizontalAlignment="Left" Margin="654,667,0,0" Text="* Headache" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="35" Width="157" />
+        <TextBlock HorizontalAlignment="Left" Margin="654,703,0,0" Text="* Loss of taste or smell" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="22" Foreground="White" Height="35" Width="245" />
+    </Grid>
+</Page>
